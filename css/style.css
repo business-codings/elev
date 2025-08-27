@@ -45,7 +45,8 @@ a {
 }
 
 .logo {
-    color: #2179D1;
+    width: 100px;
+    /* color: #2179D1; */
 }
 
 img {
