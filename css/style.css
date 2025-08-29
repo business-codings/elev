@@ -47,8 +47,7 @@ a {
 .logo {
     width: 100px;
     /* color: #2179D1; */
-}
-
+ 
 img {
     width: 100%;
     height: 100%;
@@ -56,7 +55,7 @@ img {
 }
 
 header {
-    padding: 50px;
+    padding: 2rem 50px;
     color: #f1f1f1;
     display: flex;
     flex-direction: row;
