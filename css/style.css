@@ -30,6 +30,7 @@ a {
     font-size: 17px;
     color: #f1f8f1;
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .montserrat-900 {
@@ -86,13 +87,12 @@ header ul {
 
 .logo-icon {
 
-    width: 20px;
     position: absolute;
-    top: -10px;
+    top: -11px;
     /* sobe a nuvem */
     right: -43px;
     /* joga a nuvem mais pro lado */
-    width: 50px;
+    width: 38px;
     /* tamanho da nuvem */
     height: auto;
 }
@@ -100,14 +100,15 @@ header ul {
 nav ul li ul {
     display: none;
     position: absolute;
-    background-color: #111111; /* ou mesma cor do seu nav */
+    background-color: #111111;
+    /* ou mesma cor do seu nav */
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 /* Mostra submenu ao passar o mouse */
-nav ul li:hover > ul {
+nav ul li:hover>ul {
     display: block;
 }
 
@@ -120,6 +121,7 @@ nav ul li ul li a {
     display: block;
     text-decoration: none;
     color: inherit;
+
 }
 
 h1 {
@@ -142,7 +144,7 @@ main {
     max-width: 55%;
 }
 
-button {
+.nav-button {
     font-weight: 500;
     margin: 25px 0;
     padding: 20px 30px;
@@ -154,26 +156,9 @@ button {
 }
 
 
-.blue-white-button {
-
-    color: #111111;
-    background-color: #f1f1f1;
-}
-
-.blue-white-button:hover {
-
-    color: #111111;
-    background-color: #2179D1;
-}
-
-.black-blue-button {
+.nav-button:hover {
     color: #f1f1f1;
-    background-color: #0D4B8A;
-}
-
-.black-blue-button:hover {
-
-    background-color: #111111;
+    background-color: #005d6c;
 }
 
 p {
@@ -270,6 +255,59 @@ h2 {
     font-weight: 500;
 }
 
+.faq-container {
+    background: #000;
+    color: #fff;
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.faq-container h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #333;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    padding: 20px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-icon {
+    font-size: 22px;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.faq-answer p {
+    margin: 0;
+    padding: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -289,9 +327,18 @@ footer nav a {
     transition: 0.5s;
 }
 
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav a:hover,
 footer nav a:hover {
+
     color: #005d6c;
 }
+
 @media screen and (max-width:1000px) {
 
 
