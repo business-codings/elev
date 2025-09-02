@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/elev.png" type="image/png">
+
+
+    <title>Comece seu negócio - Londrina</title>
+
+
+
+    <style>
+        .contact-container {
+            background: #111111;
+            color: #fff;
+            padding: 50px;
+            max-width: 900px;
+            margin: auto;
+            font-family: "Georgia", serif;
+            text-align: left;
+        }
+
+        .contact-container h2 {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 40px;
+            line-height: 1.4em;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            background: #fff;
+            color: #111111;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: #fff;
+            color: #111111;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 120px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h3 class="logo-text ">Elev</h3>
+            <img class="logo-icon" src="./images/elev.png" alt="">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="./">Início</a></li>
+                <li><a href="./sobre.html">Quem Somos</a></li>
+                <li class="dropdown">
+                    <a href="../servicos.html">Serviços </a>
+                    <ul class="submenu">
+                        <li><a href="./servicos/avaliacao.html">Avaliação </a></li>
+                        <li><a href="./servicos/transformacao-digital.html">Transformação Digital</a></li>
+                        <li><a href="./servicos/estrategia-ti.html">Estratégia a longo prazo</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./contato.html">Contato</a></li>
+
+            </ul>
+        </nav>
+
+
+
+    </header>
+    <main>
+
+
+        <div class="contact-container">
+            <h2>Como melhorar os resultados do seu negócio?<br>Entre em contato e agende uma consultoria especializada para você.</h2>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject*</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+
+
+
+        <nav>
+            <ul>
+                <li><a href="./">Início</a></li>
+                <li><a href="./missao.html">Sobre Nós</a></li>
+                <li><a href="./servicos.html">Serviços</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+
+            </ul>
+        </nav>
+
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
