@@ -13,16 +13,13 @@
 
 
     <style>
-        .contact-container {
-            background: #111111;
-            color: #fff;
+       .contact-container {
             padding: 50px;
             max-width: 900px;
             margin: auto;
-            font-family: "Georgia", serif;
             text-align: left;
         }
-
+ 
         .contact-container h2 {
             font-size: 28px;
             font-weight: 500;
@@ -50,7 +47,7 @@
         label {
             font-size: 14px;
             margin-bottom: 5px;
-            color: #fff;
+            color: #000;
         }
 
         input,
@@ -60,8 +57,8 @@
             border-radius: 1.6rem;
             outline: none;
             font-size: 14px;
-            background: #fff;
-            color: #111111;
+            background: #000;
+            color: #fff;
         }
 
         textarea {
@@ -69,13 +66,7 @@
         }
 
         .submit-btn {
-            background: #fff;
-            color: #111111;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 50px;
-            font-size: 16px;
-            cursor: pointer;
+           
             width: 120px;
         }
     </style>
@@ -85,30 +76,28 @@
 <body>
     <header>
         <div class="logo">
-            <h3 class="logo-text ">Elev</h3>
-            <img class="logo-icon" src="./images/elev.png" alt="">
-        </div>
 
-        <nav>
+            <img class="logo-icon" src="./images/elevlogo_transparent.png" alt="">
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+        <nav class="menu">
             <ul>
                 <li><a href="./">Início</a></li>
-                <li><a href="./sobre.html">Quem Somos</a></li>
                 <li class="dropdown">
-                    <a href="../servicos.html">Serviços </a>
+                    <a href="#">Serviços</a>
                     <ul class="submenu">
-                        <li><a href="./servicos/avaliacao.html">Avaliação </a></li>
+                        <li><a href="./servicos/avaliacao.html">Avaliação</a></li>
                         <li><a href="./servicos/transformacao-digital.html">Transformação Digital</a></li>
                         <li><a href="./servicos/estrategia-ti.html">Estratégia a longo prazo</a></li>
                     </ul>
                 </li>
-
+                <li><a href="./sobre.html">Quem Somos</a></li>
                 <li><a href="./contato.html">Contato</a></li>
-
             </ul>
         </nav>
-
-
-
     </header>
     <main>
 
@@ -144,7 +133,7 @@
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
 
-                <button type="submit" class="submit-btn">Enviar</button>
+                <button type="submit" class="submit-btn nav-button">Enviar</button>
             </form>
         </div>
 
@@ -158,7 +147,8 @@
     </main>
     <footer>
 
-
+        <a href="https://wa.me/5543991578700?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20consulta%20gratuita!"
+            target="_blank" class="whatsapp-fixo"><img src="./images/wpp.webp" alt=""></a>
 
         <nav>
             <ul>

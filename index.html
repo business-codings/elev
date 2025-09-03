@@ -8,85 +8,111 @@
     <link rel="shortcut icon" href="./images/elev.png" type="image/png">
 
 
-    <title>Comece seu negócio - Londrina</title>
+    <title>Consultoria Empresarial</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <h3 class="logo-text ">Elev</h3>
-            <img class="logo-icon" src="./images/elev.png" alt="">
+    <section class="img-background">
+        <header>
+            <div class="logo">
+
+                <img class="logo-icon" src="./images/elevlogo_transparent.png" alt="">
+            </div>
+            <!-- <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label> -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="./">Início</a></li>
+                    <li class="dropdown">
+                        <a href="#">Serviços</a>
+                        <ul class="submenu">
+                            <li><a href="./servicos/avaliacao.html">Avaliação</a></li>
+                            <li><a href="./servicos/transformacao-digital.html">Transformação Digital</a></li>
+                            <li><a href="./servicos/estrategia-ti.html">Estratégia a longo prazo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./sobre.html">Quem Somos</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="scroll-text">
+            <h1>Elevamos seu negócio em direção a um futuro brilhante.</h1>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="./">Início</a></li>
-
-                <li class="dropdown">
-                    <a href="#">Serviços </a>
-                    <ul class="submenu">
-                        <li><a href="./servicos/avaliacao.html">Avaliação </a></li>
-                        <li><a href="./servicos/transformacao-digital.html">Transformação Digital</a></li>
-                        <li><a href="./servicos/estrategia-ti.html">Estratégia a longo prazo</a></li>
-                    </ul>
-                </li>
-                <li><a href="./sobre.html">Quem Somos</a></li>
-                <li><a href="./contato.html">Contato</a></li>
-
-            </ul>
-        </nav>
-
-
-
-    </header>
+    </section>
     <main>
-        <div class="text-h">
-            <h1>Ajudamos a elevar seu negócio para um futuro brilhante.</h1>
-        </div>
-
-        <div class="img">
-            <img src="./images/1.webp" alt="">
-        </div>
-
-        <div class="text-p montserrat-300">
-            <p>A vontade de ajudar empresários, gestores e outros a alavancar a TI é o que nos move. Conte
-                conosco
-                para conhecer nossa gama de serviços de tecnologia da informação e maximizar o potencial do seu negócio.
-            </p>
-            <a href="./servicos.html"></a><button class="nav-button">Veja Nossos Serviços</button></a>
-        </div>
 
 
-        <div>
-            <h2>Adaptaremos seu modelo de negócio às tendências atuais, respeitando sua individualidade.
+        <section class="featured">
 
-            </h2>
-            <br>
-            <a href="./sobre.html"><button class="nav-button">Quem Somos</button></a>
-        </div>
-        <section class="">
-            <div class="text-h">
-                <h1>Tire máximo proveito do seu negócio.<br> Entre em contato para agendar uma consulta</h1>
+            <div class="featured-item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, temporibus error tenetur nobis,
+                    excepturi atque quisquam quos accusantium asperiores exercitationem fugiat voluptate cum recusandae
+                    blanditiis officiis delectus perspiciatis! Veniam, laboriosam.</p>
             </div>
 
-            <br><br>
-            <a href="./contato.html"><button class="nav-button">Consulta Grátis!*</button></a>
+            <div class="featured-item">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sed dolorem saepe sapiente omnis
+                    pariatur et ipsa, possimus esse, unde qui! Aliquid sed nam similique nihil soluta incidunt
+                    perspiciatis nisi!
+                </p>
+            </div>
+
+            <div class="featured-item">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi assumenda, mollitia nemo optio dolore
+                    consequatur veritatis! Harum, distinctio quo atque, dolorem vel iste asperiores corrupti sed
+                    quibusdam consequatur non beatae.</p>
+            </div>
+
         </section>
 
 
-        <section>
 
+
+
+
+
+        <div id="quiz-container">
+            <div class="quiz-step">
+                <div class="quiz-header">
+                    <div class="step">STEP 1 OF 3</div>
+                    <h2>What's your site about?</h2>
+                    <p>We'll tailor content and advice to your site needs.</p>
+                </div>
+                <div class="quiz-body">
+                    <input type="text" id="quiz-input" placeholder="Search for your site topic" />
+                </div>
+                <div class="quiz-footer">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 33%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <section class="faq">
+            <h2>FAQ</h2>
             <div class="faq-container">
-                <h2>FAQ</h2>
+
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        Como funciona o processo de consultoria de negócios e TI?
+                        <strong>Como funciona o processo de uma consultoria de negócios e TI?</strong>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Iniciamos com um diagnóstico completo, analisando infraestrutura tecnológica, processos e
-                            metas de negócio. Em seguida, apresentamos um plano de ação personalizado e, dependendo do
+                        <p>É feito um diagnóstico completo, analisando processos, posição tecnológica, metas de negócio,
+                            e outros. Em seguida, apresentamos um plano de ação personalizado e, dependendo do
                             escopo, acompanhamos a implementação e monitoramos os resultados para garantir a efetividade
                             das soluções propostas.</p>
                     </div>
@@ -94,20 +120,21 @@
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        Qual é o custo ou investimento em consultoria de negócios e TI?
+                        <strong>Qual é o custo ou investimento ao contratar uma consultoria empresarial?</strong>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
                         <p>O valor depende do porte da empresa, necessidade de intervenção (pontual ou contínua) e
-                            complexidade do projeto. Mas é importante enxergar como um investimento: os resultados —
-                            como ganhos de eficiência, redução de custos e crescimento organizado — frequentemente
-                            superam o valor investido.</p>
+                            complexidade do projeto. E é super importante enxergar como um investimento: os resultados —
+                            como ganhos de eficiência, redução de custos e crescimento organizado — definitivamente
+                            superam o valor investido. Sem levar em consideração que prezamos o cliente acima de tudo, e
+                            estamos dispostos a analisar o orçamento de cada um de forma flexível.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        Quando é hora de contratar uma consultoria de TI?
+                        <strong>Quando é hora de contratar uma consultoria de TI?</strong>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
@@ -119,7 +146,7 @@
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        Consultoria em TI serve apenas para grandes empresas?
+                        <strong>Consultoria em TI serve apenas para grandes empresas?</strong>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
@@ -140,15 +167,24 @@
     </div>
     <footer>
 
-
+        <a href="https://wa.me/5543991578700?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20consulta%20gratuita!"
+            target="_blank" class="whatsapp-fixo"><img src="./images/wpp.webp" alt=""></a>
 
         <nav>
             <ul>
                 <li><a href="./">Início</a></li>
-                <li><a href="./missao.html">Sobre Nós</a></li>
+                <li><a href="./sobre.html">Sobre Nós</a></li>
                 <li><a href="./servicos.html">Serviços</a></li>
                 <li><a href="./contato.html">Contato</a></li>
 
+            </ul>
+
+
+            <ul>
+                <li>
+                    <h3>Assuntos Gerais</h3>
+                </li>
+                <li><a href="mailto:email@elevconsultoria.com">email@elevconsultoria.com</a></li>
             </ul>
         </nav>
 

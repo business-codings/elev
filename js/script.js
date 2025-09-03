@@ -1,27 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const langPrefix = /^\/(en|pt-br)(?=\/|$)/i;
+const currentLocation = window.location.pathname;
 
-  const normalize = (path) => {
+// seleciona todos os links do site (header + footer)
+const menuLinks = document.querySelectorAll('nav.menu a');
 
-    try { path = new URL(path, window.location.origin).pathname; } catch (e) { }
-    return path
-      .replace(langPrefix, '')
-      .replace(/\/index\.html?$/i, '')
-      .replace(/\.html?$/i, '')
-      .replace(/\/+$/, '')
-      .toLowerCase() || '/';
-  };
 
-  const current = normalize(window.location.pathname);
-
-  document.querySelectorAll('nav a[href]').forEach(a => {
-    const target = normalize(a.getAttribute('href'));
-
-    const isHome = target === '/';
-    const match = current === target || (isHome && current === '/');
-
-    if (match) a.classList.add('active');
-  });
+menuLinks.forEach(link => {
+  if (link.getAttribute('href') === "." + currentLocation ||
+    link.getAttribute('href') === currentLocation ||
+    (currentLocation === "/" && link.getAttribute('href') === "./")) {
+    link.classList.add("active");
+  }
 });
 
 
@@ -56,3 +44,47 @@ document.querySelectorAll(".faq-question").forEach(button => {
   });
 });
 
+
+
+const toggle = document.getElementById("darkModeToggle");
+const body = document.body;
+
+// Carregar preferencia salva
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark-mode");
+  toggle.checked = true;
+}
+
+toggle.addEventListener("change", () => {
+  if (toggle.checked) {
+    body.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark");
+  } else {
+    body.classList.remove("dark-mode");
+    localStorage.setItem("theme", "light");
+  }
+});
+
+const el = document.querySelector(".scroll-text h1");
+
+window.addEventListener("scroll", () => {
+  const rect = el.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  if (rect.top < windowHeight * 0.8 && rect.bottom > windowHeight * 0.2) {
+    el.classList.add("visible");
+  } else {
+    el.classList.remove("visible"); // tira essa linha se quiser que fique sempre ativo depois
+  }
+});
+
+const input = document.getElementById('quiz-input');
+const progress = document.querySelector('.progress-bar .progress');
+
+input.addEventListener('input', () => {
+  if (input.value.length > 0) {
+    progress.style.width = '33%';
+  } else {
+    progress.style.width = '0%';
+  }
+});
